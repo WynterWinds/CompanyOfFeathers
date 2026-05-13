@@ -14,16 +14,9 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		
 		<main class="container">
 			<Header />
+			<div id="aboutMe"></div>
+			<div id="activity"></div>
+			<div id="extra"></div>
 		</main>
 	</body>
 </html>
-
-
-<script>
-  const header = document.querySelector('header') as HTMLElement;
-  const container = document.querySelector('.container') as HTMLElement;
-  
-  if (header && container) {
-    container.style.height = `calc(100vh - ${header.offsetHeight}px)`;
-  }
-</script>

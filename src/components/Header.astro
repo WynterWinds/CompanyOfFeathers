@@ -5,15 +5,20 @@ import HeaderLink from './HeaderLink.astro';
 
 <header>
 	
-		<h2><a href="/" class="title">{SITE_TITLE}</a></h2>
+		<h2><a href="/">{SITE_TITLE}</a></h2>
 	
 </header>
 <style>
 	header {
 		margin: 0;
 		background: #1e1f21;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
-		grid-column: span 2;
+		grid-column: span 3;
+		grid-row: 1;
+		padding: 1em 1em;
+  		display: flex;
+  		align-items: center;
+		outline: 1px red solid;
+		outline-offset: -2px;
 	}
 	h2 {
 		margin: 0;
@@ -47,13 +52,5 @@ import HeaderLink from './HeaderLink.astro';
 		.social-links {
 			display: none;
 		}
-	}
-	.title {
-  		padding: 1em 1em;
-  		background: #1e1f21;
-  		display: flex;
-  		align-items: center;
-		outline: 1px red solid;
-		outline-offset: -2px;
 	}
 </style>
